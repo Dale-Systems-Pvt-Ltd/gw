@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-md navbar-light bg-secondary">
+    <div>
+        <a class="navbar-brand" [routerLink]="['/home']">
+          NEST
+        </a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown" dropdown routerLinkActive="active"></li>
+        </ul>
+    </div>
+    
+    
+  
+    
+    
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li *ngIf="loggedIn()" class="nav-item">
+                <div class="dropdown" dropdown>
+                    <a class="dropdown-toggle text-light" dropdownToggle>
+                      {{userName}}
+                    </a>
+                  
+                    <div class="dropdown-menu mt-3" *dropdownMenu>
+                      <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Edit Profile</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" (click)="logout()"><i class="fa fa-sign-out"></i> Logout</a>
+                    </div>
+                  </div>
+            </li>
+            <li *ngIf="!loggedIn()" class="nav-item">
+                <form  #loginForm="ngForm" class="form-inline my-2 my-lg-0" (ngSubmit)="login()">
+                    <input class="form-control mr-sm-2" placeholder="Email" type="email" 
+                      required name="email" [(ngModel)]="model.email">
+                    <input class="form-control mr-sm-2" placeholder="Password" type="password" 
+                      required name="password" [(ngModel)]="model.password">
+                    <button class="btn btn-success mr-2" [disabled]="!loginForm.valid" type="submit">Login</button>
+                    <a [routerLink]="['/auth/register']" class="btn btn-outline-success">Register</a>
+                  </form>
+            </li>
+        </ul>
+    </div>
+
+  </nav>

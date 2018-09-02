@@ -1,0 +1,159 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+  <div class="container">
+      <a class="navbar-brand" [routerLink]="['/home']">
+        <i class="fa fa-home"></i>
+      </a>
+  
+      <ul *ngIf="loggedIn()" class="navbar-nav mr-auto">
+       
+        <li class="nav-item dropdown" dropdown routerLinkActive="active">            
+          <a class="nav-link dropdown-toggle text-light" dropdownToggle>
+            Rentals
+          </a>              
+          <div class="dropdown-menu" *dropdownMenu>
+            <a class="dropdown-item" [routerLink]="['/propmgr/rentals/p']" routerLinkActive="active" >
+              Properties
+            </a>
+            <a class="dropdown-item" [routerLink]="['/propmgr/rentals/rr']" routerLinkActive="active" >
+              Rent roll
+            </a>
+            <a class="dropdown-item" >
+              Tenants
+            </a>
+            <a class="dropdown-item" >
+              Rental owners
+            </a>
+            <a class="dropdown-item" >
+              Outstanding balances
+            </a>
+          </div>            
+        </li>
+        <li class="nav-item dropdown" dropdown routerLinkActive="active">            
+            <a class="nav-link dropdown-toggle text-light" dropdownToggle>
+              Leasing
+            </a>              
+            <div class="dropdown-menu" *dropdownMenu>
+              <a class="dropdown-item">
+                Listings
+              </a>
+              <a class="dropdown-item" href="#">
+                Applicants
+              </a>
+              <a class="dropdown-item" href="#">
+                eLease and draf leases
+              </a>
+              <a class="dropdown-item" href="#">
+                Lease renewals
+              </a>              
+            </div>            
+          </li>
+          <li class="nav-item dropdown" dropdown routerLinkActive="active">            
+            <a class="nav-link dropdown-toggle text-light" dropdownToggle>
+              Associations
+            </a>              
+            <div class="dropdown-menu" *dropdownMenu>
+              <a class="dropdown-item">
+                Associations
+              </a>
+              <a class="dropdown-item" href="#">
+                Ownership accounts
+              </a>
+              <a class="dropdown-item" href="#">
+                Association owners and tenants
+              </a>
+              <a class="dropdown-item" href="#">
+                Outstanding balances
+              </a>
+              <a class="dropdown-item" href="#">
+                Violations
+              </a>
+            </div>            
+          </li>
+        <li class="nav-item dropdown" dropdown routerLinkActive="active">            
+          <a class="nav-link dropdown-toggle text-light" dropdownToggle>
+            Accounting
+          </a>              
+          <div class="dropdown-menu" *dropdownMenu>
+            <a class="dropdown-item">
+              Financials
+            </a>
+            <a class="dropdown-item" href="#">
+              General Ledger
+            </a>
+            <a class="dropdown-item" href="#">
+              Banking
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              Bills
+            </a>
+            <a class="dropdown-item" href="#">
+              Recurring transactions
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              Budgets
+            </a>
+            <a class="dropdown-item" href="#">
+              Chart of accounts
+            </a>
+            <a class="dropdown-item" href="#">
+              Company financials
+            </a>
+
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              1099-MISC tax filing
+            </a>
+          </div>            
+        </li>
+        <li class="nav-item dropdown" dropdown routerLinkActive="active">            
+          <a class="nav-link dropdown-toggle text-light" dropdownToggle>
+            Maintenance
+          </a>              
+          <div class="dropdown-menu" *dropdownMenu>
+            <a class="dropdown-item">
+              Vendors
+            </a>
+            <a class="dropdown-item" href="#">
+              Work orders
+            </a>
+            <a class="dropdown-item" href="#">
+              Property inspection
+            </a>            
+          </div>            
+        </li>
+        <li class="nav-item dropdown" dropdown routerLinkActive="active">            
+          <a class="nav-link dropdown-toggle text-light" dropdownToggle>
+            Tasks
+          </a>              
+          <div class="dropdown-menu" *dropdownMenu>
+            <a class="dropdown-item" [routerLink]="['/propmgr/tasks/ir']" routerLinkActive="active" >
+              Incoming requests
+            </a>
+            <a class="dropdown-item" [routerLink]="['/propmgr/tasks/mt']" routerLinkActive="active" >
+              My tasks
+            </a>
+            <a class="dropdown-item" [routerLink]="['/propmgr/tasks/at']" routerLinkActive="active" >
+              All tasks
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/propmgr/tasks/rt']" routerLinkActive="active" >
+              Recurring tasks
+            </a>     
+          </div>            
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="['/communication']">Communication</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="['/reports']">Reports</a>
+        </li>     
+             
+      </ul>
+    
+      
+  </div>
+  
+
+</nav>

@@ -1,0 +1,513 @@
+<h1>Reports</h1>
+
+<h4 class="mt-5">Financial</h4>
+<div>
+  <div class="row mt-3">
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/financial/bs']" routerLinkActive="active" >Balance Sheet</a>
+      </h5>
+      <small>Assets, liabilities, and equity by property as of a specific date</small>
+    </div>
+    <div class="col-sm">
+      <h5><a [routerLink]="['/reports/financial/ba']" routerLinkActive="active" >Balance vs. actual</a></h5>
+      <small>Compare budgeted amounts to actual income and expenses</small>
+    </div>
+    <div class="col-sm">
+        <h5><a [routerLink]="['/reports/financial/cf']" routerLinkActive="active" >Cash flow statement</a></h5>
+      <small>Changes in cash by property during a specified time frame</small>
+    </div>
+  </div>
+  <div class="row mt-3">
+      <div class="col-sm">
+        <h5>
+          <a [routerLink]="['/reports/financial/gl']">General ledger</a>
+        </h5>
+        <small>Debit and credit transactions by property during a specified time frame</small>
+      </div>
+      <div class="col-sm">
+        <h5>
+          <a [routerLink]="['/reports/financial/is']" >Income statement</a>
+        </h5>
+        <small>Income and expense by property during a specified time frame</small>
+      </div>
+      <div class="col-sm">
+        <h5>
+          <a [routerLink]="['/reports/financial/mi']" >Management income</a>
+        </h5>
+        <small>
+          Income and expense paid to the management company by property during a specified time frame.
+        </small>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-sm">
+        <h5>
+          <a [routerLink]="['/reports/financial/ps']" >Propety statement</a>
+        </h5>
+        <small>Beginning and ending cash balances by property during a specified time frame</small>
+      </div>
+      <div class="col-sm">
+        <h5>
+          <a [routerLink]="['/reports/financial/roeb']" >Rental owner ending balances</a>
+        </h5>
+        <small>Rental owners' ending asset balances, including property reserves
+          and held liabilities by property as of a specified date.
+        </small>
+      </div>
+      <div class="col-sm">
+        <h5>
+          <a [routerLink]="['/reports/financial/ros']" >Rental owner statement</a>
+        </h5>
+        <small>
+          Rental owners' beginning and ending cash balances by property during a specified time frame.
+        </small>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-sm">
+        <h5>
+          <a [routerLink]="['/reports/financial/tb']">Trial balance</a>
+        </h5>
+        <small>Debit and credit balance by account during a specified time frame</small>
+      </div>
+      <div class="col-sm">
+        <h5>
+          <a [routerLink]="['/reports/financial/vl']" >Vendor ledger</a>
+        </h5>
+        <small>Bills and payments charged to specific vendors during a specified time frame.</small>
+      </div>
+      <div class="col-sm">
+        <h5>
+          
+        </h5>
+        <small>
+          
+        </small>
+      </div>
+    </div>
+</div>
+
+<h4 class="mt-5">Rental</h4>
+<div>
+  <div class="row mt-3">
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/rental/ct']" routerLinkActive="router-link-active" >Current tenants</a>
+      </h5>
+      <small>Current tenants by property</small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/rental/dt']" routerLinkActive="router-link-active" >Delinquent tenants</a>
+      </h5>
+      <small>Tenanants with outstanding balances as of a specific date</small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/rental/le']" routerLinkActive="router-link-active" >Leases ending</a>
+      </h5>
+      <small>
+        All leases that will end during a specified time frame
+      </small>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/rental/la']" routerLinkActive="router-link-active" >Leasing agent</a>
+      </h5>
+      <small>All draft leases activated during a specifed time frame by proerty and leasing agent</small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/rental/rp']" routerLinkActive="router-link-active" >Rent paid</a>
+      </h5>
+      <small>Rent balance due by property and tenant, i.e. lease date, recurring charges,
+      credit previous payments, and previous balances.
+      </small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/rental/rr']" routerLinkActive="router-link-active" >Rent roll</a>
+      </h5>
+      <small>
+        Rent balance due by property and tenant, i.e. lease date, market rent,
+        recurring rent, credit, and deposits held.
+      </small>
+    </div>
+  </div>
+
+
+  <div class="row mt-3">
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/rental/ripc']" routerLinkActive="router-link-active" >Renters Insurance Plus compliance</a>
+      </h5>
+      <small>All insured units</small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/rental/tn']" routerLinkActive="router-link-active" >Tenant notes</a>
+      </h5>
+      <small>Tenant notes by property during specified time frame.
+      </small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/rental/ts']" routerLinkActive="router-link-active" >Tenant statement</a>
+      </h5>
+      <small>
+        Tenants' charges, credits, and payments by property during a specified time frame.
+      </small>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/rental/tv']" routerLinkActive="router-link-active" >Tenant vehicles</a>
+      </h5>
+      <small>Tenants' vehicles by proeprty</small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/rental/ul']" routerLinkActive="router-link-active" >Unit listings</a>
+      </h5>
+      <small>Rental listings by property.
+      </small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/rental/vu']" routerLinkActive="router-link-active" >Vacant units</a>
+      </h5>
+      <small>
+        Vacant units by property.
+      </small>
+    </div>
+  </div>
+  
+</div>
+
+<h4 class="mt-5">
+  Association
+</h4>
+<div>
+  <div class="row mt-3">
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/association/aon']" routerLinkActive="router-link-active" >Association owner notes</a>
+      </h5>
+      <small>Association owner notes during a specified time frame</small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/association/aos']" routerLinkActive="router-link-active" >Associaton owner statement</a>
+      </h5>
+      <small>Association owners' charges, credits, and payments during a specified time frame.
+      </small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/association/aov']" routerLinkActive="router-link-active" >Association owner vehicles</a>
+      </h5>
+      <small>
+        Association owners' vehicles by association.
+      </small>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/association/cao']" routerLinkActive="router-link-active" >Current association owners</a>
+      </h5>
+      <small>Current association owners by property</small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/association/dao']" routerLinkActive="router-link-active" >Delinquent association owners</a>
+      </h5>
+      <small>Association owners with outstanding ledger balances as of a specified date.
+      </small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/association/rc']" routerLinkActive="router-link-active" >Recurring charges</a>
+      </h5>
+      <small>
+        Unit details, recurring charges, owner occupancies, and balances due by association owner.
+      </small>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/association/v']" routerLinkActive="router-link-active" >Violations</a>
+      </h5>
+      <small>Violations and statuses by property during a specified time frame</small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        
+      </h5>
+      
+    </div>
+    <div class="col-sm">
+      <h5>
+      
+      </h5>
+      
+    </div>
+  </div>
+</div>
+
+<h4 class="mt-5">
+  Property
+</h4>
+<div>
+  <div class="row mt-3">
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/property/a']" routerLinkActive="router-link-active" >Appliances</a>
+      </h5>
+      <small>All appliances, warranty expirations, installation dates, and last service dates</small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['//reports/property/eh']" routerLinkActive="router-link-active" >Event history</a>
+      </h5>
+      <small>Saved event history by property during a specified time frame.
+      </small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['//reports/property/lfp']" routerLinkActive="router-link-active" >Late fee policy</a>
+      </h5>
+      <small>
+        Late fee policy details by property and unit
+      </small>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['//reports/property/mr']" routerLinkActive="router-link-active" >Meter readings</a>
+      </h5>
+      <small>Most recent meter readings by property, unit, and meter type during a specified time frame</small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['//reports/property/prp']" routerLinkActive="router-link-active" >Payment reminder policy</a>
+      </h5>
+      <small>Payment reminder policy details by property and unit.
+      </small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a href=""></a>
+      </h5>
+      <small>
+        
+      </small>
+    </div>
+  </div>
+</div>
+
+<h4 class="mt-5">
+  Transactions
+</h4>
+<div>
+  <div class="row mt-3">
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/transaction/bt']" routerLinkActive="router-link-active" >Bank transactions</a>
+      </h5>
+      <small>A bank account's detailed transaction history by property during a specified time frame</small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/transaction/btsu']" routerLinkActive="router-link-active" >Basic Tenant Screening usage</a>
+      </h5>
+      <small>Billed Basic Tenant Screening usage during a specified time frame.
+      </small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/transaction/cd']" routerLinkActive="router-link-active" >Check details</a>
+      </h5>
+      <small>
+        Check details by bank account during a specifed time frame.
+      </small>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/transaction/ela']" routerLinkActive="router-link-active" >eLease activity</a>
+      </h5>
+      <small>eLease details by property during  a specified time frame</small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/transaction/epa']" routerLinkActive="router-link-active" >ePay activity</a>
+      </h5>
+      <small>Electronic fund transfers (EFTs) by bank account during a specified time frame.
+      </small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/transaction/ptsu']" routerLinkActive="router-link-active" >Premium Tenant Screening usage</a>
+      </h5>
+      <small>
+        Billed Premium Tenant Screening usage during a specified time frame
+      </small>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/transaction/rcpu']" routerLinkActive="router-link-active" >Transaction details by account</a>
+      </h5>
+      <small>Debits and credits for a general ledger account during a specified time frame</small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/transaction/ripb']" routerLinkActive="router-link-active" >Renters Insurance Plus billing</a>
+      </h5>
+      <small>
+        Your account's issurance charges and credits by month.
+      </small>
+    </div>
+    <div class="col-sm">
+      <h5>
+          <a [routerLink]="['/reports/transaction/se']" >Scheduled EFTs</a>
+      </h5>
+      <small>
+        Next scheduled fund transfers (EFTs) by property.
+      </small>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+      <div class="col-sm">
+        <h5>
+          <a [routerLink]="['/reports/transaction/tdba']" >Transaction details by property</a>
+        </h5>
+        <small>
+          Debits and credits for a general ledger account during a specified time frame.
+        </small>
+      </div>
+      <div class="col-sm">
+        <h5>
+          <a [routerLink]="['/reports/transaction/ubbp']" >Unpaid bills by property</a>
+        </h5>
+        <small>Unpaid bills and unused credits by property as of a specified date.
+        </small>
+      </div>
+      <div class="col-sm">
+        <h5>
+          
+        </h5>
+        <small>
+          
+        </small>
+      </div>
+    </div>
+</div>
+
+<h4 class="mt-5">
+  Compliance
+</h4>
+<div>
+  <div class="row mt-3">
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/compliance/babb']" routerLinkActive="router-link-active" >Bank account balance breakdown</a>
+      </h5>
+      <small>
+        Owner's or properties' bank account funds as of a specified date.
+      </small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/compliance/br']" routerLinkActive="router-link-active" >Bank reconciliation</a>
+      </h5>
+      <small>
+        The most recent bank reconciliation report for a specified bank account.
+      </small>
+    </div>
+    <div class="col-sm">
+      <h5>
+        <a [routerLink]="['/reports/compliance/tr']" routerLinkActive="router-link-active" >Trust reconciliation</a>
+      </h5>
+      <small>
+        Bank account balance breakdown and reconciliation reports often needed for PM licensing borad audits.
+      </small>
+    </div>
+  </div>  
+</div>
+
+<h4 class="mt-5">
+    Task
+  </h4>
+  <div>
+    <div class="row mt-3">
+      <div class="col-sm">
+        <h5>
+          <a [routerLink]="['/reports/task/ct']" routerLinkActive="router-link-active" >Completed tasks</a>
+        </h5>
+        <small>
+          Completed tasks by property, assignee, and task type during a specified time frame.
+        </small>
+      </div>
+      <div class="col-sm">
+        <h5>
+          <a [routerLink]="['/reports/task/ot']" routerLinkActive="router-link-active" >Open tasks</a>
+        </h5>
+        <small>
+          Open tasks by property, assignee, and task type during a specified time frame.
+        </small>
+      </div>
+      <div class="col-sm">
+        <h5>
+          <a [routerLink]="['/reports/task/tp']" routerLinkActive="router-link-active" >Tasks performance</a>
+        </h5>
+        <small>
+          Task status and performance metrics by property, assignee, and task type during a specified time frame.
+        </small>
+      </div>
+    </div> 
+    
+    <div class="row mt-3">
+      <div class="col-sm">
+        <h5>
+          <a [routerLink]="['/reports/task/wo']" routerLinkActive="router-link-active" >Work orders</a>
+        </h5>
+        <small>
+          Work orders by property, assignee, work order type, and status during a specified time frame.
+        </small>
+      </div>
+      <div class="col-sm">
+        <h5>
+          <a href=""></a>
+        </h5>
+        <small>
+          
+        </small>
+      </div>
+      <div class="col-sm">
+        <h5>
+          <a href=""></a>
+        </h5>
+        <small>
+          
+        </small>
+      </div>
+    </div> 
+  </div>
